@@ -3,10 +3,6 @@
   /* text-align: center; */
 }
 
-p {
-  margin: 0;
-}
-
 .paginator {
   width: 170px;
   margin: 10px auto;
@@ -14,4 +10,12 @@ p {
 
 .curr-page {
   margin: 0 10px;
+}
+
+.container {
+  background-color: lightgray;
+}
+
+span {
+  font-weight: bold;
 }

@@ -37,14 +37,14 @@ export const App = () => {
 
   return (
     <div className="App">
-      <div className="container bg-light p-3">
+      <div className="container p-3">
         <div className="row col-6 mb-3 mx-auto">
           <DebounceInput
             value={searchQuery}
             onChange={handleSearch}
             debounceTimeout={1500}
             minLength={3}
-            style={{ padding: "10px" }}
+            style={{ padding: "10px", borderRadius: "10px", border: "none" }}
           />
         </div>
 
@@ -74,22 +74,28 @@ export const App = () => {
                 <div className="col-lg-4 col-md-6 my-2" key={photo.id}>
                   <img src={photo.urls.small} />
 
-                  {photo.description && <p>Description: {photo.description}</p>}
+                  {photo.description && (
+                    <div>
+                      <span>Description:</span> {photo.description}
+                    </div>
+                  )}
 
-                  <div>Created by: {photo.user.name}</div>
+                  <div>
+                    <span>Created by:</span> {photo.user.name}
+                  </div>
 
                   {photo.user.social.twitter_username && (
-                    <p>
+                    <div>
                       <FaTwitter style={{ color: "rgb(15, 116, 233)" }} />{" "}
                       {photo.user.social.twitter_username}
-                    </p>
+                    </div>
                   )}
 
                   {photo.user.social.instagram_username && (
-                    <p>
+                    <div>
                       <BsInstagram style={{ color: "fuchsia" }} />{" "}
                       {photo.user.social.instagram_username}
-                    </p>
+                    </div>
                   )}
 
                   <div>
