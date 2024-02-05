@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+## This is an app to search photos created in React with Pagination and Debounce features.
+![Pagination](https://github.com/albinamels/React-Hooks-PhotoApp/blob/master/public/pagination.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Search](https://github.com/albinamels/React-Hooks-PhotoApp/blob/master/public/search.png)
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
