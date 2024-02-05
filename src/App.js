@@ -44,21 +44,36 @@ export const App = () => {
             onChange={handleSearch}
             debounceTimeout={1500}
             minLength={3}
-            style={{ padding: "10px", borderRadius: "10px", border: "none" }}
+            style={{
+              margin: "2rem auto 1rem",
+              padding: "10px",
+              borderRadius: "30px",
+              borderColor: "rgb(110,231,183)",
+            }}
           />
         </div>
 
         <div className="paginator">
           <Button
-            color="secondary"
+            style={{
+              borderRadius: "50px",
+              border: "none",
+              backgroundColor: "rgb(110,231,183)",
+            }}
             onClick={handlePrevPage}
             disabled={page === 1 && true}
           >
             Prev
           </Button>
-          <span className="curr-page">{page}/10</span>
+          <span className="curr-page" style={{ color: "rgb(16,185,129)" }}>
+            {page}/10
+          </span>
           <Button
-            color="secondary"
+            style={{
+              borderRadius: "50px",
+              border: "none",
+              backgroundColor: "rgb(110,231,183)",
+            }}
             onClick={handleNextPage}
             disabled={page === 10 && true}
           >
@@ -71,7 +86,7 @@ export const App = () => {
             // on the initial load filteredPhotos = photos, searchQuery=''
             filteredPhotos.map((photo) => {
               return (
-                <div className="col-lg-4 col-md-6 my-2" key={photo.id}>
+                <div className="col-lg-4 col-md-6 my-4" key={photo.id}>
                   <img src={photo.urls.small} />
 
                   {photo.description && (
