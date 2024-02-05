@@ -1,5 +1,7 @@
-## This is an app to search photos created in React with Pagination and Debounce features. https://albina-photos.netlify.app/
+## This is an app to search photos created in React with Pagination and Debounce features. 
 ![Pagination](https://github.com/albinamels/React-Hooks-PhotoApp/blob/master/public/pagination.png)
+
+https://albina-photos.netlify.app/
 
 ![Search](https://github.com/albinamels/React-Hooks-PhotoApp/blob/master/public/search.png)
 
